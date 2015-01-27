@@ -49,13 +49,13 @@ public class SecondMode {
     }
 
     public static Mode add(String modeName) {
-        Mode mode = Mode.create(modeName);
+        Mode mode = create(modeName);
         modes.put(modeName, mode);
         return mode;
     }
 
     public static Mode add(String modeName, int id) {
-        Mode mode = Mode.create(modeName, id);
+        Mode mode = create(modeName, id);
         modes.put(modeName, mode);
         return mode;
     }
