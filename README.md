@@ -16,6 +16,8 @@ Description to come.
 ### Static Mode 
 
 ``` java
+import fr.inria.guimodes.Mode; 
+
 Mode.size();  // 0 
 Mode.add("test1");
 Mode.size();  // 1 
@@ -32,29 +34,22 @@ Mode.size();  // 0
 
 ### Object Mode. 
 
-``` 
+``` java
+import fr.inria.guimodes.SecondaryMode; 
+
 SecondaryMode mode = new SecondaryMode();
-
-
-assertTrue(mode.size() == 0);
+mode.size();  // 0 
 mode.add("test1");
+mode.size();  // 1 
 
-assertTrue(mode.size() == 1);
-mode.add("test2");
+mode.is("test1"); // false
+mode.set("test1"); 
+mode.is("test1"); // true
 
-assertTrue(mode.size() == 2);
-mode.set("test1");
-
-mode.set("test1");
-assertTrue(mode.is("test1"));
-assertFalse(mode.is("test2"));
-
-mode.set("test2");
-assertTrue(mode.is("test2"));
-assertFalse(mode.is("test1"));
+mode.is("test2"); // false
 
 mode.clear();
-assertTrue(mode.size() == 0);
+mode.size();  // 0
 
 ``` 
 
