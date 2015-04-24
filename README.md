@@ -1,25 +1,20 @@
 
 
+
 ## GuiModes for Processing
+
 
 A simple Mode gestion for Processing.
 --
 
 Description to come. 
 
-[Latest release](http://papart.gforge.inria.fr/libraries/guiModes.tgz)
-
+[Latest release](http://papart.gforge.inria.fr/libraries/guiModes-24-04-15-10-05.tgz)
 
 ## Example Use
 
 ### Static Mode 
 
-=======
-[Latest release](http://papart.gforge.inria.fr/libraries/guiModes.tgz)
-
-## Example Use
-
->>>>>>> origin/master
 ``` java
 Mode.size();  // 0 
 Mode.add("test1");
@@ -34,7 +29,6 @@ Mode.is("test2"); // false
 Mode.clear();
 Mode.size();  // 0
 ``` 
-<<<<<<< HEAD
 
 ### Object Mode. 
 
@@ -63,3 +57,4 @@ mode.clear();
 assertTrue(mode.size() == 0);
 
 ``` 
+
