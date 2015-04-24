@@ -23,28 +23,28 @@ public class SecondaryModeTest {
     @Test
     public void testCreation() {
 
-        SecondaryMode secMode = new SecondaryMode();
+        SecondaryMode mode = new SecondaryMode();
         
         
-        assertTrue(secMode.size() == 0);
-        secMode.add("test1");
+        assertTrue(mode.size() == 0);
+        mode.add("test1");
 
-        assertTrue(secMode.size() == 1);
-        secMode.add("test2");
+        assertTrue(mode.size() == 1);
+        mode.add("test2");
 
-        assertTrue(secMode.size() == 2);
-        secMode.set("test1");
+        assertTrue(mode.size() == 2);
+        mode.set("test1");
 
-        secMode.set("test1");
-        assertTrue(secMode.is("test1"));
-        assertFalse(secMode.is("test2"));
+        mode.set("test1");
+        assertTrue(mode.is("test1"));
+        assertFalse(mode.is("test2"));
 
-        secMode.set("test2");
-        assertTrue(secMode.is("test2"));
-        assertFalse(secMode.is("test1"));
+        mode.set("test2");
+        assertTrue(mode.is("test2"));
+        assertFalse(mode.is("test1"));
 
-        secMode.clear();
-        assertTrue(secMode.size() == 0);
+        mode.clear();
+        assertTrue(mode.size() == 0);
     }
 
   
