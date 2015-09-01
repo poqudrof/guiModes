@@ -10,7 +10,8 @@ import processing.core.PApplet;
 
 /**
  *
- * @author Jeremy Laviole <jeremy.laviole@inria.fr>
+ * @author Jeremy Laviole jeremy.laviole@inria.fr
+ * @deprecated
  */
 public class SecondMode {
 

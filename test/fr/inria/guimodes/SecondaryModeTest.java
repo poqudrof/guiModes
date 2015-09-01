@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Jeremy Laviole <jeremy.laviole@inria.fr>
+ * @author Jeremy Laviole jeremy.laviole@inria.fr
  */
 public class SecondaryModeTest {
 
